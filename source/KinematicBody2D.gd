@@ -22,7 +22,7 @@ func _process(delta):
 		$Sprite.play("Run")
 	else:
 		$Sprite.play("Idle")
-		motion.x = lerp(motion.x, 0, 0.2)
+		motion.x *= 0.8
 		
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
